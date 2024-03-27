@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DesafioBackend.Mottu</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
+    <NoWarn>$(NoWarn);CS1591;CS0162;CS7022;CS8618;CS0114;CS0108</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesafioBackend.Mottu.Domain.Shared\DesafioBackend.Mottu.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+{
+  "culture": "en-GB",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Permission:Mottu": "Permissions - Mottu",
+    "Permission:Motorcycle": "Permissions - Motorcycles",
+    "Permission:List": "Permissions List",
+    "Permission:Motorcycle.Create": "Permission to create motorcycles",
+    "Permission:Motorcycle.Update": "Permission to update motorcycles",
+    "Permission:Motorcycle.Delete": "Permission to delete motorcycles",
+    "Error:LicensePlateAlreadyExists": "The provided license plate is already in use by another motorcycle."
+  }
+}
